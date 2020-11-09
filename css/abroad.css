@@ -1,0 +1,294 @@
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+.body{
+	animation-name: body;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+}
+
+
+.abroadsection{
+	max-width: 1000px;
+	margin: auto;
+	padding: 0;	
+
+}
+
+.abroadgrid {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	text-decoration: none;
+	
+}
+
+.abroadgrid li {
+	width: 524px;
+	height: 349px;
+	display: inline-block;
+	margin: 110px;
+	text-decoration: none;
+
+
+}
+
+.abroadbox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+    border-radius: 100px;   
+}
+
+.paris:hover{
+	transform: rotateY(180deg);
+	cursor: pointer;
+}
+
+
+
+.martinique:hover{
+	transform: rotateY(180deg);
+	cursor: pointer;
+}
+
+
+
+.guadeloupe:hover{
+	transform: rotateY(180deg);
+	cursor: pointer;
+}
+
+.madrid:hover {
+	transform: rotateY(180deg);
+	cursor: pointer;
+}
+
+.paris {
+	background: 
+	url(../images/rsz_parisflag.png);
+
+
+}
+
+.martinique {
+	background: 
+	url(../images/rsz_mq-flag.png);
+	
+}
+
+.guadeloupe {
+	background: 
+	url(../images/rsz_gd.png);
+}
+
+.madrid {
+	background: 
+	url(../images/rsz_madrid.png);
+}
+
+
+.text1{
+	font-size: 50px;
+	font-family: bungee, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	transform: translate(-0%, -90%);
+	color: crimson;
+
+}
+
+
+
+.text2{
+	font-size: 50px;
+	font-family: bungee, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	transform: translate(-0%, -90%);
+	color: black;
+}
+
+.text3{
+	font-size: 50px;
+	font-family: bungee, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	transform: translate(-0%, -90%);
+	color: black;
+}
+
+
+.text4{
+	font-size: 50px;
+	font-family: bungee, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	transform: translate(-0%, -90%);
+	color: gold;
+	
+}
+
+
+.L1 {
+	color: darkblue;
+}
+
+.L2{
+	color: darkblue;
+}
+
+
+.L3{
+	color:darkblue;
+}
+
+.L4{
+	color: rgb(108,160,220);
+}
+
+
+.L5{
+	color: rgb(108,160,220);
+}
+
+.L6{
+	color: rgb(108,160,220);
+}
+
+.L7{
+	color: rgb(108,160,220);
+}
+
+.L8{
+	color: rgb(108,160,220);
+}
+
+.L9{
+	color: darkgreen;
+}
+
+.L10{
+	color: darkgreen;
+
+}
+
+.L11{
+	color: darkgreen;
+}
+
+.L12{
+	color: darkgreen;
+}
+
+.L13{
+	color: darkgreen;
+}
+
+.L14{
+	color:crimson;
+}
+
+.L15{
+	color: crimson;
+}
+
+.L16{
+	color: crimson;
+}
+
+
+@keyframes body{
+	0%{background-color: white;}
+	100%{background-color: rgb(208,240,192);}
+
+}
+
+
+
+
+.menuOverlayClass {
+  background-color: rgba(0,0,0, 1.0);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  overflow-x: hidden;
+  transition: 0.1s;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition-delay: 0.2s;
+  transition-duration: 0.5s;
+  
+  
+}
+
+.menuOverlayList {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.menuOverlayClass a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(166,231,255);
+  display: block;
+  transition: 0.1s;
+  font-family: 'bungee', sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.menuOverlayClass a:hover, .menuOverlayClass a:focus {
+  color: rgb(119,221,119);
+}
+
+.menuOverlayClass .closeButton {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 200px) {
+  .menuOverlayClass a {font-size: 20px}
+  .menuOverlayClass .closeButton {
+  font-size: 18px;
+  top: 20px;
+  right: 30px;
+  }
+}
+
+#myScrollButton{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 0;
+  font-size: 18px;
+  border: solid 3px rgb(166,231,255);
+  outline: none;
+  background-color: honeydew;
+  color: darkblue;
+  cursor: pointer;
+  padding:5px;
+  border-radius: 2px;
+  font-family: 'bungee', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#myScrollButton:hover{
+	background-color: 
+}

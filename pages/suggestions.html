@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><h1> Suggestions </h1></title>
+ <link rel="stylesheet" href="https://use.typekit.net/pea4xsz.css">
+ <link rel="stylesheet" type="text/css" href="../css/suggestions.css">
+</head>
+
+<body class="suggestionForm">
+
+
+  <div id="naviList" class="menuOverlayClass">
+  <a href="javascript:void(0);" class="closeButton" onclick="closeNav()">&#9746;</a>
+  <div class="menuOverlayList">
+  	<a href="welcome.html"> Welcome </a>
+    <a href="aboutme.html"> About Me </a> 
+    <a href="hbcu.html"> Top 10 HBCUs </a>
+    <a href="abroad.html"> Photos Abroad </a>
+    <a href="book.html"> Recommended Read </a>
+    <a href="suggestions.html"> Suggestion Form </a>
+  </div>
+</div>
+
+<span style="
+    font-family: 'bungee', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:18px;
+   border-radius: 2px; 
+   border: solid 3px rgb(166,231,255);
+    position: fixed;
+    cursor: pointer;
+    padding: 5px;
+    background-color: honeydew;
+    color: black;
+    top: 15px;
+    left:15px;
+  "onclick="openNav()">&#9870; Home
+</span>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("naviList").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("naviList").style.width = "0%";
+}
+</script>
+
+
+
+
+<button onclick="topFunction()" id="myScrollButton"> UP </button>
+
+
+
+
+<script>
+var myScrollButton = document.getElementById("myScrollButton");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    myScrollButton.style.display = "block";
+  } else {
+    myScrollButton.style.display = "none";
+  }
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+
+<form>
+	First Name:
+<br>
+<input type="text" name="firstname">
+<br>
+    Last Name:
+<br>
+<input type="text" name="lastname">
+<br>
+    Gender:
+<br>
+<input type="radio" name="gender" value="Male">
+    Male
+<br>
+<input type="radio" name="gender" value="Female">
+    Female
+<br>
+ Any Suggestions:
+ <br>
+<input type="text" name="suggestions">
+ <br>
+<input type="button" name="submit" value="Submit">
+
+</form>
+
+
+</body>
+</html>

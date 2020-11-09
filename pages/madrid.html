@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> <h1> Madrid </h1> </title>
+<link rel="stylesheet" type="text/css" href="../css/madrid.css">
+<link rel="stylesheet" href="https://use.typekit.net/pea4xsz.css">
+
+</head>
+
+
+
+<div id="naviList" class="menuOverlayClass">
+  <a href="javascript:void(0);" class="closeButton" onclick="closeNav()">&#9746;</a>
+  <div class="menuOverlayList">
+  	<a href="welcome.html"> Welcome </a>
+    <a href="aboutme.html"> About Me </a> 
+    <a href="hbcu.html"> Top 10 HBCUs </a>
+    <a href="abroad.html"> Photos Abroad </a>
+    <a href="book.html"> Recommended Read </a>
+    <a href="suggestions.html"> Suggestion Form </a>
+  </div>
+</div>
+<body class="body">
+<span style="
+    font-family: 'bungee', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size:18px;
+    border-radius: 2px; 
+    border: solid 3px rgb(166,231,255);
+    position: fixed;
+    cursor: pointer;
+    padding: 5px;
+    background-color: honeydew;
+	" onclick="openNav()">&#9870; Home
+</span>
+
+<script>
+function openNav() {
+  document.getElementById("naviList").style.width = "100%";
+ 
+}
+
+function closeNav() {
+  document.getElementById("naviList").style.width = '0%';
+  
+}
+
+</script>
+
+
+
+
+<button onclick="topFunction()" id="myScrollButton"> UP </button>
+
+<script>
+var myScrollButton = document.getElementById("myScrollButton");
+
+window.onscroll = function() {scrollFunction()};
+
+
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    myScrollButton.style.display = "block";
+  } else {
+    myScrollButton.style.display = "none";
+  }
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+	
+
+</script>
+
+
+	
+     
+
+  <h2 class="madridH"><span class="L1">M</span>a<span class="L2">d</span>r<span class="L3">i</span>d </h2>
+
+
+<div class="madridSection">
+<div class="columnMadrid">
+<img src="../images/Madrid1.png" width="900px" height="1050px">
+<img src="../images/Madrid2.png"width="900px" height="1050px">
+<img src="../images/Madrid3.png"width="900px" height="1050px">
+<img src="../images/Madrid4.png"width="900px" height="1050px">
+
+</div>
+
+</div>
+
+
+</body>
+
+
+</html>

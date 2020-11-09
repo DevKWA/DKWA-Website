@@ -1,0 +1,178 @@
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+body{
+    animation-name: body;
+    animation-iteration-count: infinite;
+   animation-duration: 15s;
+}
+
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 90px;
+  font-family: 'bungee', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  border: solid 3px rgb(166,231,255);
+  background-color: honeydew;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+
+}
+
+
+ul {
+  text-align: center;
+  font-family: 'bungee', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  list-style-type: none:
+  margin:0;
+  padding: 0;
+  border: solid 3px rgb(166,231,255);
+  font-size: 22px;
+  background-color: honeydew;
+}
+
+p { 
+  border: solid 3px rgb(166,231,255);
+  border-radius: 3px;
+  display: block;
+  padding: 10px;
+  margin-top:50px;
+  background-color: honeydew;
+  bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+   font-family: 'bungee', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:22px;
+    letter-spacing: 1.5px;
+
+}
+
+.menuOverlayClass {
+  background-color: rgba(0,0,0, 1.0);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  overflow-x: hidden;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  transition-delay: 0.2s;
+  transition-duration: 0.5s; 
+  
+}
+
+
+
+.menuOverlayList {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.menuOverlayClass a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  color: rgb(166,231,255);
+  display: block;
+  transition: 0.1s;
+  font-family: 'bungee', sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.menuOverlayClass a:hover, .menuOverlayClass a:focus {
+  color: rgb(119,221,119);
+}
+
+.menuOverlayClass .closeButton {
+  position: absolute;
+  top: 0px;
+  left: 250px;
+  font-size: 60px;
+  
+
+  
+}
+
+@media screen and (max-height: 200px) {
+  .menuOverlayClass a {font-size: 20px}
+  .menuOverlayClass .closeButton {
+  font-size: 18px;
+  top: 20px;
+  right: 30px;
+  
+
+  }
+}
+
+#myScrollButton{
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 0;
+  font-size: 18px;
+  border: solid 3px rgb(166,231,255);
+  outline: none;
+  background-color: honeydew;
+  color: black;
+  cursor: pointer;
+  padding:5px;
+  border-radius: 2px;
+  font-family: 'bungee', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.memoji:hover {
+  -webkit-filter: blur(1.5px);
+}
+
+.memoji {
+  border-radius: 8px;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  position: relative;
+  top: 250px;
+  max-width: 100%;
+  height: auto;
+  animation-name: memoji ;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  border: solid 3px rgb(166,231,255);
+
+}
+
+
+@keyframes memoji {
+  0%{top:-500px;}
+  50% {top:80px; transform: rotateY(180deg);}
+  100% {top: 80px;}
+
+}
+
+@keyframes body {
+  0%{background-color: white;}
+  100%{background-color: rgb(208,240,192);}
+
+}

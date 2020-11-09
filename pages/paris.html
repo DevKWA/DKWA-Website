@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> <h1> Paris </h1> </title>
+<link rel="stylesheet" type="text/css" href="../css/paris.css">
+<link rel="stylesheet" href="https://use.typekit.net/pea4xsz.css">
+
+
+</head>
+
+<body class="body">
+     
+
+
+<div id="naviList" class="menuOverlayClass">
+  <a href="javascript:void(0);" class="closeButton" onclick="closeNav()">&#9746;</a>
+  <div class="menuOverlayList">
+    <a href="welcome.html"> Welcome </a>
+    <a href="aboutme.html"> About Me </a> 
+    <a href="hbcu.html"> Top 10 HBCUs </a>
+    <a href="abroad.html"> Photos Abroad </a>
+    <a href="book.html"> Recommended Read </a>
+    <a href="suggestions.html"> Suggestion Form </a>
+  </div>
+</div>
+
+
+
+<span style="
+    font-family: 'bungee', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size:18px;
+  border-radius: 2px; 
+  border: solid 3px rgb(166,231,255);
+  position: fixed;
+  cursor: pointer;
+  padding: 5px;
+  background-color: honeydew;
+  color: crimson;
+	"onclick="openNav()">&#9870; Home
+</span>
+
+
+
+
+
+<script>
+
+
+function openNav() {
+  document.getElementById("naviList").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("naviList").style.width = "0%";
+
+}
+
+const scrollY = document.body.style.top;
+document.body.style.position = '';
+document.body.style.top = '';
+window.scrollTo(0, parseInt(scrollY || '0') * -1);
+</script>
+
+
+
+
+<button onclick="topFunction()" id="myScrollButton"> UP </button>
+
+
+
+
+<script>
+var myScrollButton = document.getElementById("myScrollButton");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    myScrollButton.style.display = "block";
+  } else {
+    myScrollButton.style.display = "none";
+  }
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+ <h2 class="parisH"><span class="L1">P</span>a<span class="L2">r</span>i<span class="L3">s</span></h2>
+       
+
+
+
+<div class="parisSection">
+<div class="columnParis">
+<img src="../images/Paris1.png" width="1050px" height="800px">
+<img src="../images/Paris2.png"width="1050px" height="800px">
+<img src="../images/Paris3.png"width="1050px" height="800px">
+<img src="../images/Paris4.png"width="1050px" height="800px">
+
+</div>
+
+<div class="columnParis2">	
+<img src="../images/Paris5.png"width="1050px" height="800px">
+<img src="../images/Paris6.png"width="1050px" height="800px">
+<img src="../images/Paris7.png"width="1050px" height="800px">
+<img src="../images/Paris8.png"width="1050px" height="800px">
+
+</div>
+
+<div class="columnParis3">
+<img src="../images/Paris9.png"width="1050px" height="800px">
+<img src="../images/Paris10.png"width="1050px" height="800px">
+<img src="../images/Paris11.png"width="1050px" height="800px">
+<img src="../images/Paris12.png"width="1050px" height="800px">
+ </div>
+
+</div>
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><h1> HBCUS</h1></title>
+<link rel="stylesheet" type="text/css" href="../css/hbcu.css">
+<link rel="stylesheet" href="https://use.typekit.net/pea4xsz.css">	
+</head>
+<body>
+
+<div id="naviList" class="menuOverlayClass">
+  <a href="javascript:void(0);" class="closeButton" onclick="closeNav()">&#9746;</a>
+  <div class="menuOverlayList">
+  	<a href="welcome.html"> Welcome </a>
+    <a href="aboutme.html"> About Me </a> 
+    <a href="hbcu.html"> Top 10 HBCUs </a>
+    <a href="abroad.html"> Photos Abroad </a>
+    <a href="book.html"> Recommended Read </a>
+    <a href="suggestions.html"> Suggestion Form </a>
+  </div>
+</div>
+
+<span style="
+    font-family: 'bungee', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:18px;
+   border-radius: 2px; 
+   border: solid 3px rgb(166,231,255);
+    position: fixed;
+    cursor: pointer;
+    padding: 5px;
+    background-color: honeydew;
+    color: black;
+    top: 15px;
+    left:15px;
+  "onclick="openNav()">&#9870; Home
+</span>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("naviList").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("naviList").style.width = "0%";
+}
+</script>
+
+
+
+
+<button onclick="topFunction()" id="myScrollButton"> UP </button>
+
+
+
+
+<script>
+var myScrollButton = document.getElementById("myScrollButton");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    myScrollButton.style.display = "block";
+  } else {
+    myScrollButton.style.display = "none";
+  }
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+
+	<table width="90%" border= solid> 
+	<tr>
+		<th> Rank </th>
+		<th> Name of University </th>
+		<th> City, State </th>
+		<th> Year Founded </th>
+		
+	</tr>
+
+
+	<tr class="spelman">
+		 <td> 1 </td> 
+		<td> Spelman College</td>
+		<td>  Atlanta, Georgia </td>
+		<td> 1881 </td>
+    </a>
+    </tr>
+
+    <tr class="howard">
+		 <td> 2 </td> 
+		<td> Howard University </td>
+		<td> Washington, District of Columbia </td>
+		<td> 1867 </td>
+		
+
+    </tr>
+
+    <tr class="xavier">
+		 <td> 3 </td> 
+		<td> Xavier University of Louisiana </td>
+		<td>  New Orleans, Louisiana </td>
+		<td> 1925 </td>
+	
+
+    </tr>
+
+    <tr class="tuskegee">
+		 <td> 4 </td> 
+		<td> Tuskegee University</td>
+		<td>  Tuskegee, Alabama</td>
+		<td> 1881 </td>
+		
+
+    </tr>
+
+    <tr class="hampton">
+		 <td> 5 </td> 
+		<td> Hampton University </td>
+		<td>  Hampton, Virginia </td>
+		<td> 1868 </td>
+		
+
+    </tr>
+
+    <tr class="morehouse">
+		 <td> 6 </td> 
+		<td> Morehouse College</td>
+		<td>  Atlanta, Georgia </td>
+		<td> 1867 </td>
+		
+
+    </tr>
+
+    <tr class="florida">
+		 <td> 7 </td> 
+		<td> Florida A&M University</td>
+		<td>  Tallahassee, Florida </td>
+		<td> 1887 </td>
+
+
+    </tr>
+
+    <tr class="northcarolina">
+		 <td> 8 </td> 
+		<td> North Carolina A&T State University </td>
+		<td>  Durham, North Carolina </td>
+		<td> 1891 </td>
+		
+
+    </tr>
+
+    <tr class="claflin">
+		 <td> 9 </td> 
+		<td> Claflin  University </td>
+		<td>  Orangeburg, South Carolina </td>
+		<td> 1869 </td>
+	
+
+    </tr>
+
+
+    <tr class="fisk">
+		 <td> 10 </td> 
+		<td> Fisk University </td>
+		<td>  Atlanta, Georgia </td>
+		<td> 1866 </td>
+		
+
+    </tr>
+</table>
+     
+</body>
+</html>

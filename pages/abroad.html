@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<title><h1> Abroad</h1></title>
+<link rel="stylesheet" type="text/css" href="../css/abroad.css">
+<link rel="stylesheet" href="https://use.typekit.net/pea4xsz.css">
+
+</head>
+<body class="body">
+
+
+
+<div id="naviList" class="menuOverlayClass">
+  <a href="javascript:void(0);" class="closeButton" onclick="closeNav()">&#9746;</a>
+  <div class="menuOverlayList">
+    <a href="welcome.html"> Welcome </a>
+    <a href="aboutme.html"> About Me </a>
+    <a href="hbcu.html"> Top 10 HBCUs </a>
+    <a href="abroad.html"> Photos Abroad </a>
+    <a href="book.html"> Recommended Read </a>
+    <a href="suggestions.html"> Suggestion Form </a>
+  </div>
+</div>
+
+
+
+
+<span style="
+    font-family: 'bungee', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:18px;
+    border-radius: 2px; 
+    border: solid 3px rgb(166,231,255);
+    position: fixed;
+    cursor: pointer;
+    padding: 5px;
+    background-color: honeydew;
+    color: crimson;
+  "onclick="openNav()">&#9870; Home
+</span>
+
+
+
+
+
+<script>
+function openNav() {
+  document.getElementById("naviList").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("naviList").style.width = "0%";
+}
+</script>
+
+
+
+
+<button onclick="topFunction()" id="myScrollButton"> UP </button>
+
+
+
+
+<script>
+var myScrollButton = document.getElementById("myScrollButton");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    myScrollButton.style.display = "block";
+  } else {
+    myScrollButton.style.display = "none";
+  }
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+
+
+
+
+
+
+<div class="abroadsection">
+<ul class="abroadgrid">
+    
+
+ <a href="paris.html">
+  
+<li><div class="abroadbox paris"> 
+    
+        
+ <h2 class="text1"> <span class="L1">P</span>a<span class="L2">r</span>i<span class="L3">s</span> </h2>
+       
+        
+</div>
+</li>
+</a>
+
+<a href="martinique.html">
+
+<li><div class="abroadbox martinique">
+        
+        
+<h2 class="text2"> <span class="L4">M</span>a<span class="L5">r</span>t<span class="L6">i</span>n<span class="L7">i</span>q<span class="L8">u</span>e</h2>
+         
+        
+</div>
+</li>
+</a>
+
+<a href="guadeloupe.html">
+
+<li><div class="abroadbox guadeloupe">
+
+        
+<h2 class="text3"> <span class="L9">G</span>u<span class="L10">a</span>d<span class="L11">e</span>l<span class="L12">o</span>u<span class="L13">p</span>e</h2>
+</div>
+</li>
+</a>
+
+<a href="madrid.html">
+<li><div class="abroadbox madrid">
+<h2 class="text4"> <span class="L14">M</span>a<span class="L15">d</span>r<span class="L16">i</span>d </h2>
+</div>
+</li>
+</ul>
+</a>
+
+</div>
+</body>
+</html>
+
+
+

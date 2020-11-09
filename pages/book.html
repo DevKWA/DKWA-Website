@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head><title> <h1> Book Recommendation </h1></title>
+<link rel="stylesheet" type="text/css" href="../css/book.css">
+<link rel="stylesheet" href="https://use.typekit.net/pea4xsz.css">
+</head>
+<body>
+
+
+<div id="naviList" class="menuOverlayClass">
+  <a href="javascript:void(0);" class="closeButton" onclick="closeNav()">&#9746;</a>
+  <div class="menuOverlayList">
+  	<a href="welcome.html"> Welcome </a>
+    <a href="aboutme.html"> About Me </a> 
+    <a href="hbcu.html"> Top 10 HBCUs </a>
+    <a href="abroad.html"> Photos Abroad </a>
+    <a href="book.html"> Recommended Read </a>
+    <a href="suggestions.html"> Suggestion Form </a>
+  </div>
+</div>
+
+<span style="
+    font-family: 'bungee', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:18px;
+   border-radius: 2px; 
+   border: solid 3px rgb(166,231,255);
+    position: fixed;
+    cursor: pointer;
+    padding: 5px;
+    background-color: honeydew;
+    color: black;
+    top: 15px;
+    left:15px;
+  "onclick="openNav()">&#9870; Home
+</span>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("naviList").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("naviList").style.width = "0%";
+}
+</script>
+
+
+
+
+<button onclick="topFunction()" id="myScrollButton"> UP </button>
+
+
+
+
+<script>
+var myScrollButton = document.getElementById("myScrollButton");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+    myScrollButton.style.display = "block";
+  } else {
+    myScrollButton.style.display = "none";
+  }
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+
+
+	
+<h1> Race After Technology </h1>
+
+
+<a href="https://www.ruhabenjamin.com/"><img src="../images/Cover.jpg" align="center" hspace="30" vspace="30" width="50%"></a>
+
+<h2> Summary </h2>
+<div>
+<p> Ruha Benjamin, the author, has written this book to highlight the inequity in the technology that we use everyday. Many of these techonlogies have not been vetted by social scientists, and they are used, in many ways, to propagate racism and white supremacy. She calls this digital era,"The New Jim Code" a play-on-words on the Jim Crow Laws in the south that descriminated against African Americans.
+</p>
+</div>
+
+   <h2> Award </h2>
+<div>
+<p>
+2020 WINNER OF THE OLIVER CROMWELL COX BOOK AWARD (for anti-racist scholarship) from the American Sociological Association Section on Race & Ethnic Minorities 
+</p>
+</div>
+
+<br>
+
+<h2> Review </h2>
+<div>
+<p>
+“Race After Technology is essential reading, decoding as it does the ever-expanding and morphing technologies that have infiltrated our everyday lives and our most powerful institutions. These digital tools predictably replicate and deepen racial hierarchies — all too often strengthening rather than undermining pervasive systems of racial and social control.” 
+<br>
+
+— Michelle Alexander, Union Theological Seminary, author of The New Jim Crow </p>
+</div>
+
+</body>
+
+</html>
